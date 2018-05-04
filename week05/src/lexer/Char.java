@@ -1,5 +1,5 @@
 package lexer;
-//ok
+//201302422 ½Å½ÂÇõ
 class Char {
 	private final char value;
 	private final CharacterType type;

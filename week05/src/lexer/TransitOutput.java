@@ -1,5 +1,5 @@
 package lexer;
-
+//201302422 ½Å½ÂÇõ
 import java.util.Optional;
 
 class TransitionOutput {

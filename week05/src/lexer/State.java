@@ -1,6 +1,5 @@
 package lexer;
-
-import static lexer.TokenType.ID;
+//201302422 ½Å½ÂÇõ
 import static lexer.TokenType.INT;
 import static lexer.TransitionOutput.GOTO_ACCEPT_ID;
 import static lexer.TransitionOutput.GOTO_ACCEPT_INT;
@@ -9,8 +8,6 @@ import static lexer.TransitionOutput.GOTO_FAILED;
 import static lexer.TransitionOutput.GOTO_MATCHED;
 import static lexer.TransitionOutput.GOTO_SIGN;
 import static lexer.TransitionOutput.GOTO_START;
-
-import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
 
 import static lexer.TransitionOutput.GOTO_SHARP;
 

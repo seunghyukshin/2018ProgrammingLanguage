@@ -1,16 +1,18 @@
 package parser.parse;
 
-import java.io.File;
+//201302422 신승혁
+import java.io.*;
 
 public class ParserMain {
 
-	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
+	public static final void main(String... args) throws Exception {
 		ClassLoader cloader = ParserMain.class.getClassLoader();
-		File file = new File(cloader.getResource("parser/as05.txt").getFile());
-		//file read는 편한대로 작성(위의 코드는 예시)
+		File file = new File(cloader.getResource("parser/as07.txt").getFile());
 		CuteParser cuteParser = new CuteParser(file);
 		NodePrinter.getPrinter(System.out).prettyPrint(cuteParser.parseExpr());
 	}
-
+	/*
+	 * ' ( + 2 3 ) ( quote ( + 2 3 ) ) ( cons 1 ' ( 2 3 4 ) ) ( + ( length ' ( 2
+	 * 3 16 ) ) -378 )
+	 */
 }

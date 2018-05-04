@@ -1,5 +1,5 @@
 package parser.ast;
-
+//201302422 ½Å½ÂÇõ
 public abstract class Node {
 	Node next;
 
